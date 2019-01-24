@@ -1,5 +1,11 @@
 .App {
+  /* Make .App a flex-container and make sure it takes up
+  100% of the available height.*/
+  height: 100%;
+  display: flex;
+  color: rgba(189, 189, 192, 1);
   text-align: center;
+
 }
 
 .App-logo {
