@@ -59,5 +59,5 @@ function generateMessage(number) {
  }
 
  function generateMessages(numberOfMessages) {
-     return Array.from({ length: numberOfMessages }, (v, i) => generateMessages(i));
+     return Array.from({ length: numberOfMessages }, (v, i) => generateMessage(i));
  }
