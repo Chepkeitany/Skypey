@@ -6,14 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import store from "./store";
 
 const render = () => {
-    // fancyLog();
+    fancyLog();
     return ReactDOM.render(<App />, document.getElementById('root'));
 }
 
-// function fancyLog() {
-//     console.log("%c Render with 👉 👉👇", "background: purple; color: #FFF");
-//     console.log(store.getState());
-// }
+function fancyLog() {
+    console.log("%c Render with 👉 👉👇", "background: purple; color: #FFF");
+    console.log(store.getState());
+}
 
 render();
 store.subscribe(render);
