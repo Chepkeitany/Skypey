@@ -1,9 +1,16 @@
 import React from "react";
+import store from "../store";
+import Header from "../components/Header";
+
 
 const ChatWindow = ({ activeUserId }) => {
+    // Fetch the entire state
+    const state = store.getState();
+    // Fetch user from contacts list
+    const activeUser = state.contacts[activeUserId];
     return (
         <div className="ChatWindow">
-        Conversation for user id: {activeUserId}
+            <Header user={activeUser} />
         </div>
     );
 };
